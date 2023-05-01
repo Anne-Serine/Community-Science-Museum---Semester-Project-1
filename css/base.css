@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-purple: #1A0841;
+  --pink: #D70FCF;
+  --white: #fff;
+  --yellow: #FFE817;
+  --body-font: "IBM Plex Sans", Verdana, Geneva, Tahoma, sans-serif;
+  --play-font: "Play", Verdana, Geneva, Tahoma, sans-serif;
+  --black: #000;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--play-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+

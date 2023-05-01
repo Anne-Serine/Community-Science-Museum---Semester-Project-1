@@ -1,0 +1,35 @@
+/* buttons */
+
+.button {
+  background-color: var(--pink);
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 12px 20px 3px;
+  position: relative;
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+} 
+
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -24px;
+  border-right: 75px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 75px solid var(--pink);
+  border-top: 12px solid var(--pink);
+}
+
+/* END */
+
+.content-box {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
