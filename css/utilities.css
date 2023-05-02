@@ -5,3 +5,7 @@
 .align-ife {
   align-items: flex-end;
 }
+
+.flex-dir-col {
+  flex-direction: column;
+}
