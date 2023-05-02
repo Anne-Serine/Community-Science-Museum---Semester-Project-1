@@ -9,3 +9,8 @@
 .flex-dir-col {
   flex-direction: column;
 }
+
+.flex {
+  display: flex;
+  gap: 10px;
+}

@@ -3,43 +3,152 @@ header {
   width: 100%;
   border-bottom: 1px solid var(--white);
   padding: 3rem 1rem 1rem;
+  position: relative;
 }
 
 .logo img {
-  max-width: 250px;
+  max-width: 150px;
   display: block;
+}
+
+header nav {
+  display: none;
+  position: absolute;
+  top: 123%;
+  right: 0;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .header-nav {
   text-transform: uppercase;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.1rem;
+  
+}
+
+.hamburger-menu {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+
+#hamburger-menu {
+  display: none;
+  justify-content: right;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 .header-nav li {
   background-color: var(--yellow);
   position: relative;
-  width: 140px;
+  width: 100%;
   text-transform: uppercase;
   font-weight: 700;
   font-family: var(--play-font);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 .header-nav li a {
   display: block;
-  padding: 30px 10px 10px;
+  padding: 20px;
   color: var(--black);
 }
 
-.header-nav li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -60px;
-  border-right: 70px solid var(--yellow);
-  border-bottom: 30px solid var(--yellow);
-  border-left: 70px solid transparent;
-  border-top: 30px solid transparent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mediaqueries */
+
+@media only screen and (min-width: 700px) {
+  .logo img {
+    max-width: 200px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    position: relative;
+  }
+
+  .header-nav li {
+    width: 100px;
+  }
+
+  header div p {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .header-nav li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px;
+    border-right: 50px solid var(--yellow);
+    border-bottom: 20px solid var(--yellow);
+    border-left: 50px solid transparent;
+    border-top: 20px solid transparent;
+  }
+
+  .header-nav li a {
+    padding: 30px 10px 10px;
+  }
+
 }
+
+@media only screen and (min-width: 950px) {
+
+  nav {
+    display: block;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  .header-nav li {
+    width: 140px;
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    max-width: 250px;
+  }
+
+  .header-nav li::before {
+    top: -60px;
+    border-right: 70px solid var(--yellow);
+    border-bottom: 30px solid var(--yellow);
+    border-left: 70px solid transparent;
+    border-top: 30px solid transparent;
+  }
+}
+
+
+
