@@ -35,3 +35,53 @@
   position: relative;
   padding: 1rem;
 }
+
+
+
+/* HOME PAGE */
+
+/* hero-heading */
+
+.hero-picture_home {
+  background-image: url(/images/hero-picture_home-page.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rem;
+}
+
+.hero-heading_home {
+  position: absolute;
+  max-width: 60rem;
+  border-style: solid;
+  padding: 2rem 3rem 4rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  font-size: 2.5rem;
+  bottom: -49%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/* END */
+
+
+.event-card {
+  position: relative;
+  background-color: var(--white);
+  max-width: 26rem;
+  width: 100%;
+}
+
+.fact-aside {
+  background-color: var(--facts-purple);
+
+}
