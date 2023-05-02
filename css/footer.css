@@ -21,11 +21,12 @@ footer::before {
 .footer-nav {
   text-transform: uppercase;
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  gap: 2rem;
   margin: 0 auto 3rem;
   flex-wrap: wrap;
   font-family: var(--play-font);
-  padding: 0 3rem;
+  text-align: center;
 }
 
 .footer-nav li a {
@@ -40,9 +41,28 @@ footer::before {
 
 footer p {
   color: var(--black);
+  margin: 1rem auto 0;
+  font-size: 0.7rem;
+}
+
+.robot-maskot {
+  width: 80px;
   margin: 0 auto;
 }
 
+
+
+
+/* mediaqueries */
+
+@media only screen and (min-width: 550px) {
+  .footer-nav {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 800px ) {
+  
 .robot-maskot {
   position: absolute;
   right: 0;
@@ -50,3 +70,7 @@ footer p {
   width: 110px;
 }
 
+.footer-nav {
+  gap: 5rem;
+}
+}

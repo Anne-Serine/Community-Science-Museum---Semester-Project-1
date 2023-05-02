@@ -2,7 +2,7 @@ header {
   background-color: var(--dark-purple);
   width: 100%;
   border-bottom: 1px solid var(--white);
-  padding: 3rem 1rem 1rem;
+  padding-top: 2rem;
   position: relative;
 }
 
@@ -14,7 +14,7 @@ header {
 header nav {
   display: none;
   position: absolute;
-  top: 123%;
+  top: calc(100% + 1px);
   right: 0;
   width: 100%;
   justify-content: flex-end;
@@ -24,7 +24,7 @@ header nav {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 1px;
   
 }
 
