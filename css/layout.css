@@ -96,13 +96,11 @@
   justify-content: center;
   flex-direction: column;
   background-color: var(--white);
-  max-width: 26rem;
   width: 100%;
   padding-bottom: 2.5rem;
 }
 
 .event-card_img {
-  max-width: 26rem;
   width: 100%;
   border: 1px solid var(--white);
 }
@@ -130,13 +128,45 @@
 
 .button_event-card {
   position: absolute;
-  top: 91.8%;
+  bottom: 0;
 }
 
 /* END */
 
 
+/* grid container for event cards */
+
+.grid-container {
+  display: grid;
+  gap: 3rem;
+}
+
+
+
+
+
 .fact-aside {
   background-color: var(--facts-purple);
 
+}
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
 }
