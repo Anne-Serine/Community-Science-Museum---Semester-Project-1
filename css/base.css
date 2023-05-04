@@ -7,6 +7,7 @@
 :root {
   --dark-purple: #1A0841;
   --facts-purple: #4F426C;
+  --bg-purple: #300967;
   --pink: #D70FCF;
   --white: #fff;
   --yellow: #FFE817;
@@ -14,6 +15,7 @@
   --play-font: "Play", Verdana, Geneva, Tahoma, sans-serif;
   --black: #000;
   --light-purple: #AFA8B8;
+  --grey: #D9D9D9;
 }
 
 body {
