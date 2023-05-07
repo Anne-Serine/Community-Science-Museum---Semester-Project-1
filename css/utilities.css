@@ -21,7 +21,20 @@
 
 .text-center {
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
+
+.info-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.info-box {
+  width: 29rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
 
 
