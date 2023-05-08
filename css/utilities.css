@@ -15,6 +15,14 @@
   gap: 10px;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.margin-top {
+  margin-top: 10rem;
+}
+
 .just-center {
   justify-content: center;
 }
@@ -34,6 +42,18 @@
   width: 29rem;
   width: 100%;
   justify-content: space-between;
+}
+
+.gal-cont-box {
+  max-width: 640px;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .gal-cont-box {
+    max-width: 1280px;
+  }
 }
 
 

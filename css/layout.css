@@ -23,6 +23,7 @@
   border-bottom: 12px solid transparent;
   border-left: 75px solid var(--pink);
   border-top: 12px solid var(--pink);
+  z-index: 1;
 }
 
 
@@ -315,8 +316,8 @@ form {
   flex-direction: column;
   position: relative;
   padding: 2rem;
-  max-width: 40rem;
-  width: 100%;
+  max-width: 80vw;
+  width: 40rem;
   margin: auto;
 }
 
@@ -324,11 +325,12 @@ form::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: -24px;
-  border-right: 75px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 75px solid var(--grey);
-  border-top: 12px solid var(--grey);
+  bottom: calc(-16vw + 1px);
+  border-right: 40vw solid transparent;
+  border-bottom: 8vw solid transparent;
+  border-left: 40vw solid var(--grey);
+  border-top: 8vw solid var(--grey);
+  left: 0;
 }
 
 
@@ -352,6 +354,101 @@ fieldset .button {
 }
 
 
+/* gallery on visit page */
+
+
+
+.gallery-grid {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "i1 i1 "
+  "i4 i5 "
+  "i7 i7 "
+  "i7 i7 "
+  "i9 i9 "
+  "i2 i3"
+  "i6 i3"
+  "i6 i8"
+  "i10 i10"
+  "i10 i10";
+  margin-top: 2rem;
+}
+
+
+.i2,
+.i4,
+.i5,
+.i8 {
+  max-width: 20rem;
+  max-height: 20rem;
+  width: 100%;
+}
+
+.i1,
+.i9 {
+  max-width: 40rem;
+  max-height: 20rem;
+  width: 100%;
+}
+
+.i3,
+.i6 {
+  max-width: 20rem;
+  max-height: 40rem;
+  width: 100%;
+}
+
+.i7,
+.i10 {
+  max-width: 40rem;
+  max-height: 40rem;
+  width: 100%;
+}
+
+.i1 {
+  grid-area: i1;
+}
+
+.i2 {
+  grid-area: i2;
+}
+
+.i3 {
+  grid-area: i3;
+}
+
+.i4 {
+  grid-area: i4;
+}
+
+.i5 {
+  grid-area: i5;
+}
+
+.i6 {
+  grid-area: i6;
+}
+
+.i7 {
+  grid-area: i7;
+}
+
+.i8 {
+  grid-area: i8;
+}
+
+.i9 {
+  grid-area: i9;
+}
+
+.i10 {
+  grid-area: i10;
+}
+
+
 
 
 /* media queries */
@@ -362,11 +459,7 @@ fieldset .button {
     font-size: 1.5rem;
   }
 
-  
-
   }
-
-
 
 @media only screen and (min-width: 600px) {
   .hero-heading_home {
@@ -385,6 +478,33 @@ fieldset .button {
 
 }
 
+@media only screen and (min-width: 800px) {
+  form::after {
+    bottom: -10rem;
+    border-right: 20rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    border-left: 20rem solid var(--grey);
+    border-top: 5rem solid var(--grey);
+  }
+
+  .gallery-grid {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 i1 i2 i3"
+    "i4 i5 i6 i3"
+    "i7 i7 i6 i8"
+    "i7 i7 i10 i10"
+    "i9 i9 i10 i10";
+    margin-top: 2rem;
+  }
+
+
+}
+
+
 
 
 @media only screen and (min-width: 900px) {
@@ -397,7 +517,6 @@ fieldset .button {
     margin-bottom: 2rem;
   }
 
- 
 
 }
 
