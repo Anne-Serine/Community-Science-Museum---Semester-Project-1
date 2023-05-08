@@ -25,7 +25,8 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: 1px;
-  
+  position: relative;
+  z-index: 1;
 }
 
 .hamburger-menu {
