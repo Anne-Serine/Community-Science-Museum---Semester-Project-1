@@ -23,6 +23,10 @@
   margin-top: 10rem;
 }
 
+.margin-bottom {
+  margin-bottom: 10rem;
+}
+
 .just-center {
   justify-content: center;
 }
@@ -46,6 +50,10 @@
 
 .gal-cont-box {
   max-width: 640px;
+}
+
+.pb0 {
+  padding-bottom: 0;
 }
 
 
