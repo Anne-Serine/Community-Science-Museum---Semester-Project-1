@@ -92,14 +92,6 @@
 /* explore page*/
 
 .explore_hero-image {
-  background-color: var(--black);
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.explore_hero-image {
   background-image: url(/images/explore-hero-header.jpg);
   height: 40rem;
   background-position-y: center;
@@ -109,7 +101,7 @@
 
 .kids-bg {
   background-image: url(/images/kids-bg.jpg);
-  height: 55rem;
+  height: 40rem;
   background-position-y: 30%;
   background-position-x: 40%;
 }
@@ -121,18 +113,30 @@
     height: 100%;
 }
 
-.question-container {
+.question-container,
+.kids-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 2rem;
   width: 80%;
 }
 
+.explore-kids {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
 .question-box {
   position: relative;
 }
 
-.question-box label {
+.question-box label,
+.kids-category-box-1,
+.kids-category-box-2,
+.kids-category-box-3,
+.kids-category-box-4 {
   position: relative;
   background-color: green;
   width: 100%;
@@ -167,6 +171,37 @@
   top: 100%;
   height: auto;
 }
+
+.kids-category-box-1 {
+  background-color: var(--yellow);
+}
+
+.kids-category-box-2 {
+  background-color: var(--green);
+}
+
+.kids-category-box-3 {
+  background-color: var(--pink);
+}
+
+.kids-category-box-4 {
+  background-color: var(--blue);
+}
+
+.kids-category-image {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-height: 100%;
+  background-color: var(--white);
+  width: 100%;
+}
+
+
+/* END */
+
+
+
 
 
 
