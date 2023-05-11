@@ -218,6 +218,7 @@
 .teach-res-container {
   display: flex;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .teach-res-text {
@@ -227,13 +228,25 @@
   background-color: var(--white);
   padding: 3rem;
   color: var(--black);
+  flex: 1 1 20rem;
+}
+
+.teach-res_image-container {
+  max-width: 30rem;
+  position: relative;
+  min-width: 16rem;
+  flex: 1 0 16rem;
+  overflow: hidden;
+  min-height: 20rem;
 }
 
 .teach-res_image {
-  display: flex;
-  flex: 1 0;
-  vertical-align: middle;
-  max-height: 15rem;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -365,6 +378,8 @@
 .reverse {
   flex-direction: row-reverse;
 }
+
+
 
 
 /* newsletter home page */
