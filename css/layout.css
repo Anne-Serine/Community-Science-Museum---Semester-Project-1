@@ -419,70 +419,31 @@
 
 .grid-container_visit {
   display: grid;
-  grid-row: 3;
-  grid-column: 3;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 53rem;
-  max-height: 53rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   width: 100%;
   gap: 1rem;
-  grid-template-areas: 
-  "admission admission admission"
-  "hours location-1 location-2"
-  "food shop access";
-  gap: 1rem;
-  margin: auto;
+  margin: 2rem auto;
+  max-width: 60rem;
 }
 
 .admission,
 .hours,
-.location-1,
-.location-2,
 .food,
 .shop,
 .access {
   padding: 2rem;
-  justify-content: center;
-}
-
-.admission,
-.hours,
-.food,
-.shop,
-.access {
   border: 2px solid var(--white);
 }
 
-
-
-.admission {
-  grid-area: admission;
-}
-
-.hours {
-  grid-area: hours;
-}
-
-.location-1 {
-  grid-area: location-1;
-}
-
+.location-1,
 .location-2 {
-  grid-area: location-2;
+  padding: 2rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.food {
-  grid-area: food;
-}
-
-.shop {
-  grid-area: shop;
-}
-
-.access {
-  grid-area: access;
-}
 
 /* form */
 
@@ -676,6 +637,10 @@ fieldset .button {
     "i7 i7 i10 i10"
     "i9 i9 i10 i10";
     margin-top: 2rem;
+  }
+
+  .admission {
+    grid-column: span 3;
   }
 
 
