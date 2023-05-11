@@ -19,8 +19,24 @@
   flex-wrap: wrap;
 }
 
+.mt-small {
+  margin-top: 2rem;
+}
+
+.mt-medium {
+  margin-top: 6rem
+}
+
 .margin-top {
   margin-top: 20rem;
+}
+
+.mb-small {
+  margin-bottom: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 6rem;
 }
 
 .margin-bottom {

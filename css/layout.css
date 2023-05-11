@@ -312,6 +312,12 @@
   color: var(--black);
 }
 
+.event-card_text {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
 .event-card_date {
   justify-content: center;
   background-color: var(--light-purple);
