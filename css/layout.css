@@ -197,6 +197,45 @@
   width: 100%;
 }
 
+.kids-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  border: 2px solid var(--white);
+  max-width: 40rem;
+  width: 100%;
+}
+
+.kids-text-form {
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  margin: auto;
+  gap: 7rem;
+}
+
+.teach-res-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.teach-res-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--white);
+  padding: 3rem;
+  color: var(--black);
+}
+
+.teach-res_image {
+  display: flex;
+  flex: 1 0;
+  vertical-align: middle;
+  max-height: 15rem;
+}
+
 
 /* END */
 
