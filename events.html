@@ -36,12 +36,69 @@
 
   <main>
 
-    <section class="content-box flex-dir-col">
-      <h1 class="mb-medium">Events at the Community Science Museum</h1>
+    <section class="lighter-purple_bg">
+      
+      <div class="content-box flex-dir-col">
+        <h1>Events at the Community Science Museum</h1>
+        <div class="select-wrapper mt-small">
+          <div class="select-box">
+            <label for="select-what">Choose event</label>
+            <select name="select-what" id="select-what">
+              <option value="0">All events</option>
+              <option value="1">Aeronautics</option>
+              <option value="2">Biology</option>
+              <option value="3">Chemistry</option>
+              <option value="4">Cosmology</option>
+              <option value="5">Dinosaurs</option>
+              <option value="6">Evolution</option>
+              <option value="7">Micro world</option>
+              <option value="8">Physics</option>
+              <option value="9">Robotics & AI</option>
+            </select>
+          </div>
+
+          <div class="select-box">
+            <label for="select-where">Choose city</label>
+            <select name="select-where" id="select-where">
+              <option value="0">All cities</option>
+              <option value="1">Haugesund</option>
+              <option value="2">Stavanger</option>
+              <option value="3">Bergen</option>
+              <option value="4">Oslo</option>
+              <option value="5">Kristiansand</option>
+              <option value="6">Trondheim</option>
+              <option value="7">Tromsø</option>
+            </select>
+          </div>
+        
+
+          <div class="select-box">
+            <label for="select-when">Choose period</label>
+            <select name="select-when" id="select-when">
+              <option value="0">Select period</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex-dir-col">
      
       <div>
 
-        <div class="highlight higlight-1">
+        <div class="content-box highlight higlight-1">
           <img class="highlight_img" src="/images/night-at-the-museum.jpg">
           <div class="highlight_text">
             <h2>NIGHT AT THE MUSEUM</h2>
@@ -50,7 +107,7 @@
           </div>
         </div>
 
-        <div class="highlight highlight-2 reverse">
+        <div class="lighter-purple_bg highlight highlight-2 reverse">
           <img class="highlight_img" src="/images/robotics-ai.jpg">
           <div class="highlight_text">
             <h2>ROBOTICS AND AI</h2>
@@ -59,7 +116,7 @@
           </div>
         </div> 
 
-        <div class="highlight higlight-1">
+        <div class="content-box highlight higlight-1">
           <img class="highlight_img" src="/images/night-at-the-museum.jpg">
           <div class="highlight_text">
             <h2>NIGHT AT THE MUSEUM</h2>
@@ -73,7 +130,7 @@
     </section>
 
     <section class="content-box flex-dir-col">
-      <h3>Upcoming events</h3>
+      <h3 class="mb-small">Upcoming events</h3>
 
       <div class="grid-container">
 
@@ -86,7 +143,7 @@
             </div>
           </div>
           <div class="event-card_text">
-            <p>Chemistry Lab</p>
+            <h4>Chemistry Lab</h4>
             <p>12:00 - 14:00</p>
             <button class="button button_event-card">Read more</button>
           </div>
@@ -94,75 +151,75 @@
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/chemistry-lab.jpg">
+            <img class="event-card_img" src="/images/electricity.jpg">
             <div class="event-card_date">
-              <p>8</p>
-              <p>Jun</p>
+              <p>15</p>
+              <p>JUN</p>
             </div>
           </div>
           <div class="event-card_text">
-            <p>Chemistry Lab</p>
-            <p>12:00 - 14:00</p>
+            <h4>Electricity Zone</h4>
+            <p>13:00 - 14:30</p>
             <button class="button button_event-card">Read more</button>
           </div>
         </div>
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/chemistry-lab.jpg">
+            <img class="event-card_img" src="/images/motion-physics.jpg">
             <div class="event-card_date">
               <p>8</p>
               <p>Jun</p>
             </div>
           </div>
           <div class="event-card_text">
-            <p>Chemistry Lab</p>
-            <p>12:00 - 14:00</p>
+            <h4>Motion Physics</h4>
+            <p>13:00 - 13:30</p>
             <button class="button button_event-card">Read more</button>
           </div>
         </div>
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/chemistry-lab.jpg">
+            <img class="event-card_img" src="/images/micro-world.jpg">
             <div class="event-card_date">
-              <p>8</p>
-              <p>Jun</p>
+              <p>18</p>
+              <p>AUG</p>
             </div>
           </div>
           <div class="event-card_text">
-            <p>Chemistry Lab</p>
-            <p>12:00 - 14:00</p>
+            <h4>Diving into the Micro world</h4>
+            <p>15:00 - 16:00</p>
             <button class="button button_event-card">Read more</button>
           </div>
         </div>
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/chemistry-lab.jpg">
+            <img class="event-card_img" src="/images/virtual-reality.jpg">
             <div class="event-card_date">
-              <p>8</p>
-              <p>Jun</p>
+              <p>24</p>
+              <p>AUG</p>
             </div>
           </div>
           <div class="event-card_text">
-            <p>Chemistry Lab</p>
-            <p>12:00 - 14:00</p>
+            <h4>Explore Virtual Reality</h4>
+            <p>12:00 - 15:00</p>
             <button class="button button_event-card">Read more</button>
           </div>
         </div>
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/chemistry-lab.jpg">
+            <img class="event-card_img" src="/images/play-robots.jpg">
             <div class="event-card_date">
-              <p>8</p>
-              <p>Jun</p>
+              <p>28</p>
+              <p>AUG</p>
             </div>
           </div>
           <div class="event-card_text">
-            <p>Chemistry Lab</p>
-            <p>12:00 - 14:00</p>
+            <h4>Play with robots</h4>
+            <p>13:00 - 15:30</p>
             <button class="button button_event-card">Read more</button>
           </div>
         </div>

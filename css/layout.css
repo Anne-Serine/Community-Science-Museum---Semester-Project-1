@@ -36,7 +36,7 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
 }
 
 
@@ -93,7 +93,6 @@
 
 .explore_hero-image {
   background-image: url(/images/explore-hero-header.jpg);
-  height: 40rem;
   background-position-y: center;
   background-position-x: 30%;
 }
@@ -232,12 +231,11 @@
 }
 
 .teach-res_image-container {
-  max-width: 30rem;
   position: relative;
   min-width: 16rem;
   flex: 1 0 16rem;
   overflow: hidden;
-  min-height: 20rem;
+  min-height: 27rem;
 }
 
 .teach-res_image {
@@ -399,8 +397,33 @@
 
 .lighter-purple_bg {
   background-color: var(--bg-purple);
+  padding: 2rem 1rem;
 }
 
+
+/* select box on event page */
+
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.select-box {
+  flex: 1 1 10rem;
+}
+
+select {
+  border: 2px solid var(--grey);
+  font-size: 1rem;
+  background-color: var(--white);
+  padding: 0.8rem 1.5rem;
+  color: var(--pink);
+  width: 100%;
+  margin-top: 0.4rem;
+}
 
 
 
@@ -642,6 +665,11 @@ fieldset .button {
     grid-column: span 3;
   }
 
+  .teach-res_image-container {
+    max-width: 26rem;
+    min-height: 20rem;
+  }  
+
 
 }
 
@@ -676,7 +704,14 @@ fieldset .button {
 
 }
 
+@media only screen and (min-width: 1350px) {
+  .explore_hero-image {
+    height: 40rem;
 
+}
+
+
+}
 
 
 
