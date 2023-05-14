@@ -156,20 +156,22 @@
           <form>
             <fieldset>
               <legend>Young Stars Club</legend>
-              <p>Where passionate young minds come together to explore the wonders of science. To join the club, please register.</p>
-              <div>
-                <div>
-                  <label for="first-name">First name</label>
-                  <input type="text" name="first-name" id="first-name">
+              <div class="flex flex-dir-col">
+                <p>Where passionate young minds come together to explore the wonders of science. To join the club, please register.</p>
+                <div class="flex wrap">
+                  <div class="flex-10">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name">
+                  </div>
+                  <div class="flex-10">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name">
+                  </div>
                 </div>
                 <div>
-                  <label for="last-name">Last name</label>
-                  <input type="text" name="last-name" id="last-name">
+                  <label for="email">Your e-mail address</label>
+                  <input type="email" name="email" id="email">
                 </div>
-              </div>
-              <div>
-                <label for="email">Your e-mail address</label>
-                <input type="email" name="email" id="email">
               </div>
               <button class="button">Register</button>
             </fieldset>

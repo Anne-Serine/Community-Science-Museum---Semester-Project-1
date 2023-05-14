@@ -43,14 +43,20 @@
       <div class="grid-container_visit">
 
         <div class="admission">
-          <h2>Admission</h2>
+          <h2>
+            <i class="fa-solid fa-ticket"></i> 
+            Admission
+          </h2>
           <p>The entrance is free for all.<br>
             There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.
             If you would like to organize a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
         </div>
 
         <div class="hours">
-          <h2>Opening hours</h2>
+          <h2>
+            <i class="fa-regular fa-clock"></i> 
+            Opening hours
+          </h2>
           <p>Monday: Closed</p>
           <p>Tuesday: 10:00 – 16:00</p>
           <p>Wednesday: 10:00 – 16:00</p>
@@ -65,28 +71,37 @@
         </div>
 
         <div class="location-2">
-          <h2>Location</h2>
+          <h2>
+            <i class="fa-solid fa-location-dot"></i> 
+            Location
+          </h2>
           <p>The museum is located at</p>  
           <p>West Road 4</p>
           <p>4262 Augvaldsnes</p><br>
           <p>Norway</p>
         </div>
 
-        <div class="food ">
-          <i class="fa-solid fa-utensils"></i>
-          <h2>Food and drink</h2>
+        <div class="food">
+          <h2>
+            <i class="fa-solid fa-utensils"></i>
+            Food and drink
+          </h2>
           <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
         </div>
 
         <div class="shop">
-          <img src="#">
-          <h2>Shop</h2>
+          <h2>
+            <i class="fa-solid fa-basket-shopping"></i>
+            Shop
+          </h2>
           <p>We have great gifts and activity packs that allow you to continue to explore science even after you have left the museum.</p>
         </div>
 
         <div class="access">
-          <img src="#">
-          <h2>Accessibility</h2>
+          <h2>
+            <i class="fa-solid fa-wheelchair"></i>
+            Accessibility
+          </h2>
           <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
         </div>
         
@@ -126,24 +141,26 @@
       <form>
         <fieldset>
           <legend>Get in touch</legend>
-          <p>Do you want to volunteer, support the museum or join an internship? Get in touch with us by submitting this form.</p>
-          <div>
-            <div>
-              <label for="first-name">First name</label>
-              <input type="text" name="first-name" id="first-name">
+          <div class=" flex flex-dir-col">
+            <p>Do you want to volunteer, support the museum or join an internship? Get in touch with us by submitting this form.</p>
+            <div class="flex wrap">
+              <div class="flex-10">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name">
+              </div>
+              <div class="flex-10">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name">
+              </div>
             </div>
             <div>
-              <label for="last-name">Last name</label>
-              <input type="text" name="last-name" id="last-name">
+              <label for="email">Your e-mail address</label>
+              <input type="email" name="email" id="email">
             </div>
-          </div>
-          <div>
-            <label for="email">Your e-mail address</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div>
-            <label for="message">Your message</label>
-            <input type="text" name="message" id="message">
+            <div>
+              <label for="message">Your message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
           </div>
           <button class="button">Submit</button>
         </fieldset>

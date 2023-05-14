@@ -12,7 +12,11 @@
 
 .flex {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
+}
+
+.flex-10 {
+  flex: 1 1 10rem;
 }
 
 .wrap {

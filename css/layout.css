@@ -209,7 +209,7 @@
 .kids-text-form {
   display: grid;
   grid-column: 1fr 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   margin: auto;
   gap: 7rem;
 }
@@ -466,6 +466,21 @@ select {
   flex-direction: column;
 }
 
+.grid-container_visit h2 i {
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+.grid-container_visit h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
 
 /* form */
 
@@ -476,7 +491,7 @@ form {
   flex-direction: column;
   position: relative;
   padding: 2rem;
-  max-width: 80vw;
+  max-width: 90vw;
   width: 40rem;
   margin: auto;
 }
@@ -486,9 +501,9 @@ form::after {
   display: block;
   position: absolute;
   bottom: calc(-16vw + 1px);
-  border-right: 40vw solid transparent;
+  border-right: 45vw solid transparent;
   border-bottom: 8vw solid transparent;
-  border-left: 40vw solid var(--grey);
+  border-left: 45vw solid var(--grey);
   border-top: 8vw solid var(--grey);
   left: 0;
 }
@@ -496,7 +511,8 @@ form::after {
 
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   padding: 0.5rem 1rem;
   width: 100%;
 }
@@ -635,10 +651,12 @@ fieldset .button {
     flex-wrap: nowrap;
   }
 
+ 
+
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 680px) {
   form::after {
     bottom: -10rem;
     border-right: 20rem solid transparent;
@@ -646,6 +664,11 @@ fieldset .button {
     border-left: 20rem solid var(--grey);
     border-top: 5rem solid var(--grey);
   }
+}
+
+
+@media only screen and (min-width: 800px) {
+  
 
   .gallery-grid {
     margin: auto;
