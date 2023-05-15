@@ -31,6 +31,10 @@
   margin-top: 6rem
 }
 
+.mt-large {
+  margin-top: 15rem;
+}
+
 .margin-top {
   margin-top: 20rem;
 }
@@ -56,6 +60,10 @@
   padding: 0 1rem;
 }
 
+.text-center-mobile {
+  text-align: center;
+}
+
 .info-box-container {
   display: flex;
   justify-content: space-between;
@@ -65,7 +73,7 @@
 }
 
 .info-box h2 {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .info-box {
@@ -82,10 +90,29 @@
 
 
 
+
+
+
+@media only screen and (min-width: 600px) {
+  .text-center-mobile {
+    text-align: left;
+  }
+
+  .mt-medium {
+    margin-top: 11rem;
+  }
+
+}
+
 @media only screen and (min-width: 800px) {
   .gal-cont-box {
     max-width: 1280px;
   }
+
+  .mt-medium {
+    margin-top: 13rem;
+  }
+
 }
 
 

@@ -3,7 +3,7 @@ footer {
   width: 100%;
   padding: 0px 40px 10px;
   position: relative;
-  margin-top: 17rem;
+  margin-top: 8rem;
 }
 
 footer::before {
@@ -73,4 +73,15 @@ footer p {
 .footer-nav {
   gap: 5rem;
 }
+
+footer {
+  margin-top: 12rem;
+}
+
+}
+
+@media only screen and (min-width: 1200px ) {
+  footer {
+    margin-top: 16rem;
+  }
 }
