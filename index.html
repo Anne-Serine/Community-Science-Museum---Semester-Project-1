@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to the Community Science Museum. Explore and learn science by interact with our many exhibitions and events. Learning the fun way!">
+  <meta name="description" content="Welcome to the Community Science Museum, where curiosity meets discovery! Explore interactive exhibits, engage in hands-on experiments, and uncover the wonders of science. Discover the captivating world of biology, chemistry, physics, and more. Ignite your imagination, broaden your knowledge, and embark on a journey of scientific exploration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -17,12 +17,12 @@
   <header>
     <div class="content-box justify-csb align-ife">
       <a class="logo" href="/index.html">
-        <img src="/images/logo-science.svg">
+        <img src="/images/logo-science.svg" alt="The Community Science Museum logo">
       </a>
       <input type="checkbox" id="hamburger-menu">
       <label class="hamburger-menu" for="hamburger-menu">
         <span>Menu</span>
-        <img src="/icons/hamburger-menu.svg">
+        <img src="/icons/hamburger-menu.svg" alt="Hamburger menu icon">
       </label>
       <nav>
         <ul class="header-nav">
@@ -48,7 +48,7 @@
       <div class="grid-container_highlight">
 
         <div class="highlight higlight-1">
-          <img class="highlight_img" src="/images/night-at-the-museum.jpg">
+          <img class="highlight_img" src="/images/night-at-the-museum.jpg" alt="an exhibition inside the museum at night">
           <div class="highlight_text">
             <h2>Night at the museum</h2>
             <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="highlight highlight-2 reverse">
-          <img class="highlight_img" src="/images/robotics-ai.jpg">
+          <img class="highlight_img" src="/images/robotics-ai.jpg" alt="a white robot with a blue and purple background">
           <div class="highlight_text">
             <h2>Robotics & AI</h2>
             <p>The information revolution is here, and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
@@ -67,24 +67,28 @@
 
         <aside class="fact-aside lighter-purple_bg">
           <h3>Scientific facts</h3>
-          <p>1 million Earths could fit inside the Sun! It’s huge!!</p>
-          <p>Humans are made of more than 60% water.</p>
-          <p>There are 206 bones in the human body!</p>
-          <p>Water freezes faster when it’s warm, not cold!</p>
-          <p>There were roughly 2.5 billion T. rexes on Earth, but not all at the same time</p>
-          
-          <h4>Temperature</h4>
-          <p>16&deg;C</p>
-          <h4>Weather</h4>
-          <p>Sunny</p>
-          <h4>Humidity</h4>
-          <p>34%</p>
-          <h4>World population</h4>
-          <p>8 billion</p>
-          <h4>Earth water surface</h4>
-          <p>71%</p>
-
-
+          <div class="facts-1">
+            <h4>Temperature</h4>
+            <p>16&deg;C</p>
+            <h4>Weather</h4>
+            <p>Sunny</p>
+            <h4>Humidity</h4>
+            <p>34%</p>
+            <h4>World population</h4>
+            <p>8 billion</p>
+            <h4>Earth water surface</h4>
+            <p>71%</p>
+          </div>
+          <div class="facts-2">
+            <h4>Did you know?</h4>
+            <ul>
+              <li>1 million Earths could fit inside the Sun! It’s huge!!</li>
+              <li>Humans are made of more than 60% water.</li>
+              <li>There are 206 bones in the human body!</li>
+              <li>Water freezes faster when it’s warm, not cold!</li>
+              <li>There were roughly 2.5 billion T. rexes on Earth, but not all at the same time</li>
+            </ul>
+          </div>
         </aside>
 
       </div>
@@ -97,7 +101,7 @@
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/chemistry-lab.jpg">
+            <img class="event-card_img" src="/images/chemistry-lab.jpg" alt="a girl performing a chemistry experiment in a lab">
             <div class="event-card_date">
               <p>8</p>
               <p>JUN</p>
@@ -112,7 +116,7 @@
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/electricity.jpg">
+            <img class="event-card_img" src="/images/electricity.jpg" alt="artificial lightning in a lab">
             <div class="event-card_date">
               <p>15</p>
               <p>JUN</p>
@@ -127,7 +131,7 @@
 
         <div class="event-card">
           <div>
-            <img class="event-card_img" src="/images/motion-physics.jpg">
+            <img class="event-card_img" src="/images/motion-physics.jpg" alt="to kids playing with Newtons cradle, demonstrating motion-physics">
             <div class="event-card_date">
               <p>22</p>
               <p>JUN</p>
@@ -144,19 +148,22 @@
 
     </section>
 
-    <section>
-      <div class="icon-wrapper flex just-center">
-        <div class="text-center">
-          <i class="icons-home-page fa-solid fa-handshake-angle"></i>
-          <p>Volunteer</p>
-        </div>
-        <div class="text-center">
-          <i class="icons-home-page fa-solid fa-hand-holding-dollar"></i>
-          <p>Support</p>
-        </div>
-        <div class="text-center">
-          <i class="icons-home-page fa-regular fa-id-card"></i>
-          <p>Internship</p>
+    <section class="content-box">
+      <div class="icon-wrapper">
+        <div class="line-through"></div>
+        <div class="icon-container">
+          <div class="text-center">
+            <i class="icons-home-page fa-solid fa-handshake-angle"></i>
+            <p>Volunteer</p>
+          </div>
+          <div class="text-center">
+            <i class="icons-home-page fa-solid fa-hand-holding-dollar"></i>
+            <p>Support</p>
+          </div>
+          <div class="text-center">
+            <i class="icons-home-page fa-regular fa-id-card"></i>
+            <p>Internship</p>
+          </div>
         </div>
       </div>
     </section>
@@ -188,7 +195,7 @@
         <img src="/icons/facebook-icon.svg">
         <img src="/icons/youtube-icon.svg">
       </div>
-      <img class="robot-maskot" src="/images/robot.png">
+      <img class="robot-maskot" src="/images/robot.png" alt="a white and blue robot holding a computer">
       <p>Anne-Serine Johannessen &copy; 2023</p>
     </div>
   </footer>
