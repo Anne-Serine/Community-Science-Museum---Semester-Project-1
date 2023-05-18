@@ -63,6 +63,17 @@ header nav {
   color: var(--black);
 }
 
+.header-nav li.current {
+  background-color: var(--orange);
+}
+
+.header-nav li.current::before {
+  border-right-color: var(--orange);
+  border-bottom-color: var(--orange);
+}
+
+
+
 
 
 
@@ -115,6 +126,17 @@ header nav {
     border-bottom: 20px solid var(--yellow);
     border-left: 50px solid transparent;
     border-top: 20px solid transparent;
+  }
+
+  .header-nav li:hover {
+    background-color: var(--orange);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .header-nav li:hover::before {
+    border-right-color: var(--orange);
+    border-bottom-color: var(--orange);
+    transition: all 0.2s ease-in-out;
   }
 
   .header-nav li a {

@@ -76,6 +76,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
+  align-items: center;
 }
 
 .hero-picture_home::before {
@@ -99,10 +100,10 @@
   text-align: center;
   gap: 1rem;
   font-size: 2rem;
-  top: 6%;
   display: flex;
   justify-content: center;
   margin: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 /* END */
@@ -118,7 +119,6 @@
 
 .kids-bg {
   background-image: url(/images/kids-cat-bg.jpg);
-  height: 40rem;
   background-position-y: 37%;
   background-position-x: 40%;
 }
@@ -141,6 +141,7 @@
   gap: 1rem;
   max-width: 64rem;
   flex: 1 1 14rem;
+  justify-content: center;
 }
 
 .explore-kids {
@@ -161,7 +162,6 @@
 
 .disclosure-container .disclosure {
   position: relative;
-  background-color: var(--white);
   flex: 1 1 14rem;
   color: var(--black);
 }
@@ -178,13 +178,17 @@
   font-size: 1.1rem;
   gap: 0.25rem;
   transition: all 0.2s ease-in-out;
-  list-style: none;
 }
 
 .disclosure-container .disclosure summary:hover {
   background-color: var(--bg-purple);
   color: var(--white);
   font-size: 1.1rem;
+}
+
+.disclosure-container .disclosure > summary::marker,
+.disclosure-container .disclosure > summary::-webkit-details-marker {
+  display: none;
 }
 
 .disclosure-container .disclosure div {
@@ -213,7 +217,9 @@
   font-size: 1.1rem;
   gap: 0.25rem;
   position: relative;
-  flex: 1 1 14rem;
+  flex: 0 1 18rem;
+  flex-direction: column;
+
 }
 
 .kids-category-box-1 {
@@ -233,9 +239,6 @@
 }
 
 .kids-category-image {
-  position: absolute;
-  top: 100%;
-  left: 0;
   min-height: 100%;
   background-color: var(--white);
   width: 100%;
@@ -613,7 +616,7 @@ form {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 2rem;
+  padding: 3rem 3rem 0;
   max-width: 90vw;
   width: 40rem;
   margin: auto;
@@ -644,7 +647,6 @@ fieldset {
   position: relative;
   border-style: none;
   gap: 3rem;
-  padding: 1rem;
 }
 
 fieldset .button {
@@ -790,7 +792,7 @@ fieldset .button {
 
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 710px) {
   form::after {
     bottom: -10rem;
     border-right: 20rem solid transparent;
@@ -799,15 +801,6 @@ fieldset .button {
     border-top: 5rem solid var(--grey);
   }
 }
-
-@media only screen and (min-width: 769px) {
-  .disclosure-container .disclosure div {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
 
 @media only screen and (min-width: 800px) {
   
@@ -834,6 +827,10 @@ fieldset .button {
     max-width: 26rem;
     min-height: 20rem;
   }  
+
+ 
+
+ 
 
 
 }
@@ -868,6 +865,29 @@ fieldset .button {
     "highlight-1 sidebar"
     "highlight-2 sidebar";
   }
+
+  .disclosure-container .disclosure div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .kids-category-box-1,
+  .kids-category-box-2,
+  .kids-category-box-3,
+  .kids-category-box-4 {
+    flex: 1 1 14rem;
+}
+
+.kids-category-image {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.kids-bg {
+  height: 40rem;
+}
 
 }
 
