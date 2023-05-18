@@ -6,9 +6,8 @@
 
 :root {
   --dark-purple: #1A0841;
-  --facts-purple: #4F426C;
   --bg-purple: #300967;
-  --pink: #D70FCF;
+  --pink: #CA0AC2;
   --hover-pink: #E478E0;
   --white: #fff;
   --yellow: #FFE817;
@@ -50,6 +49,11 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-family: var(--play-font);
 }
 
 legend {
