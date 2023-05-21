@@ -6,6 +6,10 @@
   align-items: flex-end;
 }
 
+.align-ic {
+  align-items: center;
+}
+
 .flex-dir-col {
   flex-direction: column;
 }

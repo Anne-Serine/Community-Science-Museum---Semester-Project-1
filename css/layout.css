@@ -363,12 +363,18 @@
   gap: 1rem;
 }
 
-.facts-1 {
-  gap: 1rem;
+.fact-aside i {
+  padding-right: 1rem;
+  justify-content: right;
 }
 
-.facts i {
-  color: var(--blue);
+.facts-1 {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2rem;
+  font-family: var(--play-font);
 }
 
 .facts-2 {
