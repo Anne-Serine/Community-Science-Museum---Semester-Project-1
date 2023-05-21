@@ -353,16 +353,7 @@
   max-width: 30rem;
 }
 
-.fact-aside {
-  background-color: var(--facts-purple);
-  padding: 4rem;
-  min-width: 18rem;
-  grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-}
+
 
 .fact-aside i {
   width: 2rem;
@@ -449,7 +440,7 @@
 .grid-container,
 .grid-container_highlight {
   display: grid;
-  gap: 3rem;
+  gap: 7rem;
 }
 
 /* END */
@@ -459,7 +450,6 @@
 
 .grid-container_highlight {
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
   "highlight-1"
   "highlight-2"
@@ -525,6 +515,16 @@
 .lighter-purple_bg {
   background-color: var(--bg-purple);
   padding: 2rem 1rem;
+}
+
+.fact-aside {
+  background-color: var(--bg-purple);
+  min-width: 18rem;
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  
 }
 
 
@@ -772,6 +772,10 @@ fieldset .button {
     display: flex;
   }
 
+  .fact-aside {
+    padding: 4rem;
+  }
+
 }
 
 @media only screen and (min-width: 520px) {
@@ -900,6 +904,11 @@ fieldset .button {
 
 .kids-bg {
   height: 40rem;
+}
+
+.grid-container,
+.grid-container_highlight {
+  gap: 3rem;
 }
 
 }
