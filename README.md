@@ -1,4 +1,4 @@
-# Community-Science-Museum
+# Community Science Museum
 
 
 <img width="1289" alt="Skjermbilde 2023-12-13 kl  13 53 09" src="https://github.com/Anne-Serine/Community-Science-Museum---Semester-Project-1/assets/125912893/721c27e6-6026-4a55-9d6c-777d41461182">
